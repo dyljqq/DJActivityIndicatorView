@@ -11,4 +11,4 @@ A cool ActivityIndicatorView for iOS used swift. And it also has an Object-C rea
 	
 ### ScreenShot
 
-<img src="https://github.com/dyljqq/DJActivityIndicator/raw/master/ScreenShot/1.png" width="187.5" height="337.5"/> 
+<img src="https://github.com/dyljqq/DJActivityIndicatorView/raw/master/ScreenShot/1.png" width="187.5" height="337.5"/> 

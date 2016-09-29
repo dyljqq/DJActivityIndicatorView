@@ -14,6 +14,11 @@ public enum DJActivityIndicatorType {
     case FiveDots
     case RotatingSquare
     case DoubleBounce
+    case BallPulse
+    case BallRotateClip
+    case BallClipRotatePulse
+    case BallRotateMultiple
+    case BallRotate
 }
 
 public class DJActivityIndicatorView: UIView {
@@ -29,7 +34,7 @@ public class DJActivityIndicatorView: UIView {
     var animating = false
     
     required public init(type: DJActivityIndicatorType, tintColor: UIColor = whiteColor, size: CGFloat = Constant.defaultSize) {
-        super.init(frame: CGRectZero)
+        super.init(frame: defaultFrame)
         self.type = type
         self.color = tintColor
         self.size = CGSizeMake(size, size)
@@ -78,6 +83,11 @@ public class DJActivityIndicatorView: UIView {
         case .FiveDots: return DJActivityIndicatorFiveDots()
         case .RotatingSquare: return DJActivityIndicatorRotatingSquare()
         case .DoubleBounce: return DJActivityIndicatorDoubleBounce()
+        case .BallPulse: return DJActivityIndicatorBallPulse()
+        case .BallRotateClip: return DJActivityIndicatorBallRotateClip()
+        case .BallClipRotatePulse: return DJActivityIndicatorBallClipRotatePulse()
+        case .BallRotateMultiple: return DJActivityIndicatorBallRotateMultiple()
+        case .BallRotate: return DJActivityIndicatorBallRotate()
         }
     }
     

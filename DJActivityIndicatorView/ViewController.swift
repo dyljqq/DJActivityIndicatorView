@@ -17,7 +17,8 @@ class ViewController: UIViewController {
         self.view.backgroundColor = RGB(red: 237, green: 85, blue: 101)
         
         let margin: CGFloat = 20
-        let types: [DJActivityIndicatorType] = [.NineDots, .TriplePulse, .FiveDots, .RotatingSquare, .DoubleBounce]
+        let types: [DJActivityIndicatorType] = [.NineDots, .TriplePulse, .FiveDots, .RotatingSquare, .DoubleBounce,
+                                                .BallPulse, .BallRotateClip, .BallClipRotatePulse, .BallRotateMultiple, .BallRotate]
         let width = (view.bounds.width - margin * 2) / 5.0
         for (index, type) in types.enumerate() {
             let animationView = DJActivityIndicatorView(type: type)
